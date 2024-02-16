@@ -6,6 +6,18 @@ Project to study dbt
 
 Snow Flake Account - https://jt76835.us-east-2.aws.snowflakecomputing.com
 
+### Generic Tests
+
+* unique
+* not_null
+* accepted_values
+* Relationships
+
+```
+./models/schema.yml
+```
+
+
 ### Setup
 
 ```
