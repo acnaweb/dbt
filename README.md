@@ -13,8 +13,10 @@ mkdir ~/.dbt
 ```
 
 ``` 
-dbt init <project_name>
+dbt init <project_name> --profiles-dir=profiles
 ```
+
+
 
 ``` 
 cd ./<project_name>
@@ -42,3 +44,5 @@ study_dbt:
 ## References
 
 - https://www.getdbt.com/
+- https://medium.com/@dipan.saha/dbt-on-snowflake-a-comprehensive-guide-a849e893a2e
+
