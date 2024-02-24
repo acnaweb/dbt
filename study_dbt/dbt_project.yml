@@ -32,4 +32,14 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   study_dbt:
+    +materialized: view
+    +post-hook:
+      - "GRANT SELECT ON {{ this }} TO ROLE REPORTER"
+    dim: 
+      +materialized: table
+    src:
+      +materialized: ephemeral
 
+tests:
+  +store_failures: true
+  +schema: audit_airbnb
