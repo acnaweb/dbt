@@ -57,4 +57,12 @@ study_dbt:
 
 - https://www.getdbt.com/
 - https://medium.com/@dipan.saha/dbt-on-snowflake-a-comprehensive-guide-a849e893a2e
+- https://www.datafold.com/blog/dbt-expectations
+- https://docs.getdbt.com/reference/resource-configs/store_failures
+- https://github.com/dbt-labs/dbt-core/issues/2593
+- https://docs.getdbt.com/best-practices/writing-custom-generic-tests
+- https://docs.getdbt.com/docs/build/incremental-models
+- https://pushmetrics.io/learn/jinja/why-jinja-and-sql/
+
+
 
