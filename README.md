@@ -63,6 +63,6 @@ study_dbt:
 - https://docs.getdbt.com/best-practices/writing-custom-generic-tests
 - https://docs.getdbt.com/docs/build/incremental-models
 - https://pushmetrics.io/learn/jinja/why-jinja-and-sql/
-
+- [Packages dbt](https://hub.getdbt.com/)
 
 
