@@ -28,11 +28,14 @@ mkdir ~/.dbt
 dbt init <project_name> --profiles-dir=profiles
 ```
 
-
-
 ``` 
 cd ./<project_name>
 dbt debug
+```
+
+```
+SNOWFLAKE_USER=dbt
+SNOWFLAKE_PWD=
 ```
 
 #### profiles.yml
@@ -52,6 +55,16 @@ study_dbt:
       warehouse: COMPUTE_WH
   target: dev
 ``` 
+
+## Dagster
+
+
+``` 
+dagster-dbt project scaffold --project-name dbt_dagster_project --dbt-project-dir=study_dbt
+``` 
+
+DAGSTER_DBT_PARSE_PROJECT_ON_LOAD=1 dagster dev 
+
 
 ## References
 
