@@ -1,5 +1,7 @@
 version: 2
 models:
+  - name: dim_hosts_cleansed
+    description: Cleansed table which contains Airbnb hosts.
   - name: dim_listings_cleansed
     description: Cleansed table which contains Airbnb listings.
     columns:
