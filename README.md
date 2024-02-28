@@ -46,7 +46,7 @@ study_dbt:
     dev:
       account: jt76835.us-east-2.aws
       database: AIRBNB
-      password: dbtPassword123
+      password: ***
       role: transform
       schema: RAW
       threads: 1
