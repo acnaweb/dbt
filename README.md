@@ -79,5 +79,5 @@ DAGSTER_DBT_PARSE_PROJECT_ON_LOAD=1 dagster dev
 - [Packages dbt](https://hub.getdbt.com/)
 - https://atlan.com/dbt-data-contracts/
 - https://docs.getdbt.com/docs/collaborate/govern/model-contracts
-
+- https://docs.getdbt.com/docs/collaborate/govern/about-model-governance
 
