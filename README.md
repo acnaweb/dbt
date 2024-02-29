@@ -78,5 +78,6 @@ DAGSTER_DBT_PARSE_PROJECT_ON_LOAD=1 dagster dev
 - https://pushmetrics.io/learn/jinja/why-jinja-and-sql/
 - [Packages dbt](https://hub.getdbt.com/)
 - https://atlan.com/dbt-data-contracts/
+- https://docs.getdbt.com/docs/collaborate/govern/model-contracts
 
 
