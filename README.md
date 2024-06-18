@@ -38,6 +38,18 @@ SNOWFLAKE_USER=dbt
 SNOWFLAKE_PWD=
 ```
 
+* Configuração das variáveis do env no Windows PowerShell:
+
+$Env:<VARIABLE_NAME>="<VARIABLE_VALUE>"
+
+```
+$Env:DBT_ORACLE_HOST="127.0.0.1"
+$Env:DBT_ORACLE_PASSWORD="pwd"
+$Env:DBT_ORACLE_SCHEMA="user"
+$Env:DBT_ORACLE_SERVICE="xe"
+$Env:DBT_ORACLE_USER="user"
+```
+
 #### profiles.yml
 
 ``` 
