@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: processa_dados
+    description: "Este modelo processa os dados para análise."
+    columns:
+      - name: id
+        description: "O identificador único para cada registro."
+      - name: nome
+        description: "O nome da pessoa."
+      - name: salario
+        description: "O salário da pessoa."
+      - name: bonus
+        description: "O bônus calculado como 10% do salário."

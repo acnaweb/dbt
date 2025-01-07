@@ -1,0 +1,23 @@
+study_sqlite:
+  outputs:
+    dev:
+      type: sqlite
+      threads: 1
+      database: etl.db
+      schema: 'main'
+      schemas_and_paths:
+        main: '/shared/data/study_sqlite.db'
+      schema_directory: '/shared/data'
+      
+    prod:
+      type: sqlite
+      threads: 1
+      database: <database name>
+      schema: 'main'
+      schemas_and_paths:
+        main: '/my_project/data/etl.db'
+      schema_directory: '/my_project/data'
+      extensions:
+        - '/path/to/sqlite-digest/digest.so'
+
+  target: dev
