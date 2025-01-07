@@ -3,21 +3,24 @@ study_sqlite:
     dev:
       type: sqlite
       threads: 1
-      database: etl.db
+      database: study_sqlite.db
       schema: 'main'
       schemas_and_paths:
         main: '/shared/data/study_sqlite.db'
       schema_directory: '/shared/data'
-      
-    prod:
+
+  target: dev
+
+study_mart:
+  outputs:
+
+    dev:
       type: sqlite
       threads: 1
-      database: <database name>
+      database: study_mart.db
       schema: 'main'
       schemas_and_paths:
-        main: '/my_project/data/etl.db'
-      schema_directory: '/my_project/data'
-      extensions:
-        - '/path/to/sqlite-digest/digest.so'
+        main: '/shared/data/study_mart.db'
+      schema_directory: '/shared/data'
 
   target: dev
