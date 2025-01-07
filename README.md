@@ -2,7 +2,25 @@
 
 ## Demos
 
-### Demo 1 - SQLite
+### Demo 1 - Postgres
+
+- edit .env
+
+```
+DATABASE_NAME=
+DATABASE_PWD=
+DATABASE_SCHEMA=
+DATABASE_URL=
+DATABASE_USER=
+```
+
+- Carregar variáveis de ambiente
+
+```sh
+export $(cat .env | xargs)
+```
+
+### Demo 2 - SQLite
 
 ```
 export DBT_PROFILE_DIR=$(pwd)/profiles
@@ -77,7 +95,10 @@ models:
 ```
 
 ```sh
+dbt debug --profiles-dir=$DBT_PROFILE_DIR
 dbt run --profiles-dir=$DBT_PROFILE_DIR
+dbt seed --profiles-dir=$DBT_PROFILE_DIR
+dbt test --profiles-dir=$DBT_PROFILE_DIR
 dbt docs generate --profiles-dir=$DBT_PROFILE_DIR
 dbt docs serve --profiles-dir=$DBT_PROFILE_DIR
 ```
