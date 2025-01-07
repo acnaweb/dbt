@@ -1,8 +1,24 @@
 # dbt
 
+## Basics
+
+```sh
+export DBT_PROFILE_DIR=$(pwd)/profiles
+dbt init <project_name> --profiles-dir=$DBT_PROFILE_DIR
+export DBT_PROJECT_DIR=$(pwd)/projects/<project_name>
+dbt debug --profiles-dir=$DBT_PROFILE_DIR
+dbt run --profiles-dir=$DBT_PROFILE_DIR
+dbt seed --profiles-dir=$DBT_PROFILE_DIR
+dbt test --profiles-dir=$DBT_PROFILE_DIR
+dbt docs generate --profiles-dir=$DBT_PROFILE_DIR
+dbt docs serve --profiles-dir=$DBT_PROFILE_DIR
+```
+
 ## Demos
 
 ### Demo 1 - Postgres
+
+>> project_name = study_postgres
 
 - edit .env
 
@@ -21,6 +37,8 @@ export $(cat .env | xargs)
 ```
 
 ### Demo 2 - SQLite
+
+>> project_name = study_sqlite
 
 ```
 export DBT_PROFILE_DIR=$(pwd)/profiles
@@ -94,14 +112,6 @@ models:
         description: "O bônus calculado como 10% do salário."
 ```
 
-```sh
-dbt debug --profiles-dir=$DBT_PROFILE_DIR
-dbt run --profiles-dir=$DBT_PROFILE_DIR
-dbt seed --profiles-dir=$DBT_PROFILE_DIR
-dbt test --profiles-dir=$DBT_PROFILE_DIR
-dbt docs generate --profiles-dir=$DBT_PROFILE_DIR
-dbt docs serve --profiles-dir=$DBT_PROFILE_DIR
-```
 
 ## References
 
