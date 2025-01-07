@@ -112,7 +112,6 @@ models:
         description: "O bônus calculado como 10% do salário."
 ```
 
-
 ## References
 
 - https://www.getdbt.com/
