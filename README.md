@@ -1,5 +1,10 @@
 # dbt
 
+## Layers
+
+![](out/diagrams/modeling/modeling.svg)
+
+
 ## Basics
 
 ```sh
