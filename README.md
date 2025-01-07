@@ -1,6 +1,8 @@
 # dbt
 
-## Projeto SQLite
+## Demos
+
+### Demo 1 - SQLite
 
 ```
 export DBT_PROFILE_DIR=$(pwd)/profiles
@@ -79,7 +81,6 @@ dbt run --profiles-dir=$DBT_PROFILE_DIR
 dbt docs generate --profiles-dir=$DBT_PROFILE_DIR
 dbt docs serve --profiles-dir=$DBT_PROFILE_DIR
 ```
-
 
 ## References
 
