@@ -1,0 +1,21 @@
+@startmindmap
+
+title "dbt Macro"
+footer Disponível em: https://github.com/acnaweb/dbt
+
+*[#F8F8FF] Macro
+
+**[#LightGray] Features
+***_ Reutilização
+***_ Dinamicidade
+*** Jinja 
+****_ conditionals, loops, filters
+****_ {% macro %} {% endmacro %}
+****_ call: {{ macro_name(par1, par2) }}
+
+**[#LightGray] Goods
+***_ Manutenção
+***_ Escalabilidade
+***_ Legibilidade
+
+@endmindmap

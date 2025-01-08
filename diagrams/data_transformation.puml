@@ -1,0 +1,20 @@
+@startmindmap
+
+title "Data Transformation"
+footer Disponível em: https://github.com/acnaweb/dbt
+
+*[#F8F8FF] Data Transformation
+
+**[#LightGray] Features
+***_ Cleansing
+***_ Normalization
+***_ Agregations
+***_ Enrichment
+***_ Formatting
+
+**[#LightGray] Applications
+***_ ETL
+***_ Integrations
+***_ Data Analysis
+
+@endmindmap
