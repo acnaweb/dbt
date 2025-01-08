@@ -19,13 +19,15 @@ dbt docs generate --profiles-dir=$DBT_PROFILE_DIR
 dbt docs serve --profiles-dir=$DBT_PROFILE_DIR
 ```
 
-## Demos
+## Studies
 
-* [Demo 1 - Postgres](chapters/demo1.md)
-* [Demo 2 - Sqlite](chapters/demo2.md)
-* [Demo 3 - Mart](chapters/demo3.md)
-* [Demo 4 - Macro](chapters/demo4.md)
-* [Demo 5 - Dagster](chapters/demo5.md)
+* [Study Postgres](chapters/study_postgres.md)
+* [Study Sqlite](chapters/study_sqlite.md)
+* [Study Mart](chapters/study_mart.md)
+* [Study Macro](chapters/study_macro.md)
+* [Study Dagster](chapters/dbt_dagster_project.md)
+* [Study Test](chapters/study_test.md)
+
 
 ## References
 
