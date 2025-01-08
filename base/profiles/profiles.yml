@@ -24,3 +24,26 @@ study_mart:
       schema_directory: '/shared/data'
 
   target: dev
+
+study_macro:
+  outputs:
+
+    dev:
+      type: sqlite
+      threads: 1
+      database: study_macro-dev.db
+      schema: 'main'
+      schemas_and_paths:
+        main: '/shared/data/study_macro-dev.db'
+      schema_directory: '/shared/data'
+
+    prd:
+      type: sqlite
+      threads: 1
+      database: study_macro-prd.db
+      schema: 'main'
+      schemas_and_paths:
+        main: '/shared/data/study_macro-prd.db'
+      schema_directory: '/shared/data' 
+
+  target: dev
