@@ -21,6 +21,10 @@ dbt docs serve --profiles-dir=$DBT_PROFILE_DIR
 
 ## Demos
 
+* [Demo 1 - Postgres](chapters/demo1.md)
+* [Demo 2 - Sqlite](chapters/demo2.md)
+* [Demo 3 - Mart](chapters/demo3.md)
+* [Demo 4 - Macro](chapters/demo4.md)
 
 ## References
 

@@ -91,5 +91,8 @@ dbt run --profiles-dir=$DBT_PROFILE_DIR
 dbt run --profiles-dir=$DBT_PROFILE_DIR --full-refresh
 dbt run --profiles-dir=$DBT_PROFILE_DIR --target dev
 dbt run --profiles-dir=$DBT_PROFILE_DIR --select clientes --target dev
+dbt test --profiles-dir=$DBT_PROFILE_DIR
+dbt docs generate --profiles-dir=$DBT_PROFILE_DIR
+dbt docs serve --profiles-dir=$DBT_PROFILE_DIR
 
 ```
