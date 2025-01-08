@@ -1,10 +1,6 @@
-# dbt
+### Demo 5 - Dagster
 
-Project to study dbt
-
-### Info
-
-Snow Flake Account - https://jt76835.us-east-2.aws.snowflakecomputing.com
+dbt_dagster_project
 
 ### Generic Tests
 
