@@ -7,5 +7,5 @@ install:
 
 dbt:
 	docker build -t dbt .
-	docker run --name dbt -it --rm -v ./base:/shared -p 8080:8080 dbt /bin/bash
+	docker run --name dbt -it --rm -v .:/shared -p 8080:8080 dbt /bin/bash
 

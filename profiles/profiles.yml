@@ -1,0 +1,74 @@
+study_bigquery:
+  outputs:
+    dev:
+      dataset: my-dataset
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: /shared/keyfile.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: study-project
+      threads: 1
+      type: bigquery
+  target: dev
+study_macro:
+  outputs:
+    dev:
+      database: study_macro-dev.db
+      schema: main
+      schema_directory: /shared/data
+      schemas_and_paths:
+        main: /shared/data/study_macro-dev.db
+      threads: 1
+      type: sqlite
+    prd:
+      database: study_macro-prd.db
+      schema: main
+      schema_directory: /shared/data
+      schemas_and_paths:
+        main: /shared/data/study_macro-prd.db
+      threads: 1
+      type: sqlite
+  target: dev
+study_mart:
+  outputs:
+    dev:
+      database: study_mart.db
+      schema: main
+      schema_directory: /shared/data
+      schemas_and_paths:
+        main: /shared/data/study_mart.db
+      threads: 1
+      type: sqlite
+  target: dev
+study_sqlite:
+  outputs:
+    dev:
+      database: study_sqlite.db
+      schema: main
+      schema_directory: /shared/data
+      schemas_and_paths:
+        main: /shared/data/study_sqlite.db
+      threads: 1
+      type: sqlite
+  target: dev
+study_test:
+  outputs:
+    dev:
+      database: study_test-dev.db
+      schema: main
+      schema_directory: /shared/data
+      schemas_and_paths:
+        main: /shared/data/study_test-dev.db
+      threads: 1
+      type: sqlite
+    prd:
+      database: study_test-prd.db
+      schema: main
+      schema_directory: /shared/data
+      schemas_and_paths:
+        main: /shared/data/study_test-prd.db
+      threads: 1
+      type: sqlite
+  target: dev
