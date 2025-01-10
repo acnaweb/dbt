@@ -16,27 +16,27 @@ export DBT_PROJECT_DIR=$(pwd)/projects/study_bigquery
 study_bigquery:
   outputs:
     dev:
-      dataset: my-dataset
+      dataset: stagging
       job_execution_timeout_seconds: 300
       job_retries: 1
       keyfile: /shared/credentials/study-bigquery.json
-      location: US
+      location: us-west1
       method: service-account
       priority: interactive
-      project: study-project
+      project: study-gcp-398200
       threads: 1
       type: bigquery
   target: dev   
 ```
 
-- GCP/Bigquery Info
+- GCP/Bigquery - Load data
 
 ```
-project=study-gcp
-dataset=study_bi
+python src/load_data_bigquery.py
 
 ```
 
 ```
+dbt debug --profiles-dir=$DBT_PROFILE_DIR
 dbt run --profiles-dir=$DBT_PROFILE_DIR
 ```

@@ -1,14 +1,14 @@
 study_bigquery:
   outputs:
     dev:
-      dataset: my-dataset
+      dataset: stagging
       job_execution_timeout_seconds: 300
       job_retries: 1
-      keyfile: /shared/keyfile.json
-      location: US
+      keyfile: /shared/credentials/study-bigquery.json
+      location: us-west1
       method: service-account
       priority: interactive
-      project: study-project
+      project: study-gcp-398200
       threads: 1
       type: bigquery
   target: dev
