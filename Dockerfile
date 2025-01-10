@@ -5,13 +5,14 @@ FROM python:3.11-slim
 LABEL maintainer="acnaweb"
 
 # Atualizando a lista de pacotes e instalando dependências
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
     build-essential \
-    git \
-    nano \
+    git wget unzip curl \
     sqlite3 \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+    openssh-client iputils-ping groff nano telnet && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /shared 
 VOLUME /shared
