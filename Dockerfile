@@ -8,7 +8,7 @@ LABEL maintainer="acnaweb"
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     build-essential \
-    git wget unzip curl \
+    git unzip curl \
     sqlite3 \
     openssh-client iputils-ping groff nano telnet && \
     apt-get clean && \
