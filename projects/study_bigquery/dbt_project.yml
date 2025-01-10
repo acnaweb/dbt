@@ -33,7 +33,7 @@ models:
   study_bigquery:
     marts:
       +materialized: view
-    staging:
+    dw:
       +materialized: table
 
 

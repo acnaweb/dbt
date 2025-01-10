@@ -1,11 +1,9 @@
-# Lab 9 - Analytics Engineering e Linhagem de Dados com Python, DBT, BigQuery e Looker Studio
-
 version: 2
 
 sources:
-  - name: dsastaging
-    database: "dsalab9"
-    schema: "dsastaging"
+  - name: source_raw
+    database: "study-gcp-398200"
+    schema: "raw"
     tables:
       - name: stg_clientes
         description: "Tabela de clientes contendo informações básicas dos clientes da base de dados."

@@ -1,5 +1,3 @@
-# Lab 9 - Analytics Engineering e Linhagem de Dados com Python, DBT, BigQuery e Looker Studio
-
 with
     vendas_mensais as (
         select
@@ -9,7 +7,7 @@ with
             sum(v.quantidade_venda) as total_vendas_mensal,
             sum(v.valor_total_venda) as valor_total_mensal
         from
-            {{ ref('fato_vendas') }} v
+            {{ ref('fct_vendas') }} v
         join
             {{ ref('dim_data') }} d on v.id_data = d.id_data
         group by

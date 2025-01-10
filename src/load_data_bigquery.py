@@ -8,7 +8,7 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/shared/credentials/study-bigque
 
 # Configure o projeto e dataset
 project_id = "study-gcp-398200"
-dataset_id = "staging"
+dataset_id = "raw"
 
 # Diretório onde os arquivos CSV estão salvos
 csv_directory = "/shared/data"

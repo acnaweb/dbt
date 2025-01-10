@@ -1,7 +1,5 @@
-# Lab 9 - Analytics Engineering e Linhagem de Dados com Python, DBT, BigQuery e Looker Studio
-
 with
-    fato_vendas as (
+    fct_vendas as (
         select
             data_id AS id_data,
             cliente_id AS id_cliente,
@@ -10,7 +8,7 @@ with
             quantidade AS quantidade_venda,
             total_venda AS valor_total_venda
         from
-            {{ source('dsastaging', 'stg_vendas') }}
+            {{ source('source_raw', 'stg_vendas') }}
     )
 
-select * from fato_vendas
+select * from fct_vendas

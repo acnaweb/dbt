@@ -1,5 +1,3 @@
-# Lab 9 - Analytics Engineering e Linhagem de Dados com Python, DBT, BigQuery e Looker Studio
-
 with
     dim_data as (
         select
@@ -12,7 +10,7 @@ with
             trimestre AS trimestre_calendario,
             fim_de_semana AS fim_de_semana_flag
         from
-            {{ source('dsastaging', 'stg_data') }}
+            {{ source('source_raw', 'stg_data') }}
     )
 
 select * from dim_data

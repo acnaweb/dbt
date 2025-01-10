@@ -1,7 +1,7 @@
 study_bigquery:
   outputs:
     dev:
-      dataset: stagging
+      dataset: staging
       job_execution_timeout_seconds: 300
       job_retries: 1
       keyfile: /shared/credentials/study-bigquery.json

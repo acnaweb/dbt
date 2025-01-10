@@ -1,5 +1,3 @@
-# Lab 9 - Analytics Engineering e Linhagem de Dados com Python, DBT, BigQuery e Looker Studio
-
 with
     dim_clientes as (
         select
@@ -8,7 +6,7 @@ with
             idade AS idade_cliente,
             genero AS genero_cliente
         from
-            {{ source('dsastaging', 'stg_clientes') }}
+            {{ source('source_raw', 'stg_clientes') }}
 
     )
 

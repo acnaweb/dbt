@@ -8,12 +8,12 @@ footer Disponível em: https://github.com/acnaweb/dbt
 **[#LightGray] Raw Data
 ***_ Source: Transacionais, APIs, CSVs
 
-**[#LightGray] Stagging
+**[#LightGray] Staging
 ***_ Source: Raw Data
 ***_ Remoção de duplicatas, formatação de dadas, conversões
 
 **[#LightGray] Core Models
-***_ Source: Stagging
+***_ Source: Staging
 ***_ Transformações, agregações, cálculos, criação de tabelas ou dimensões
 
 **[#LightGray] Marts

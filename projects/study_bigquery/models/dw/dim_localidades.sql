@@ -1,5 +1,3 @@
-# Lab 9 - Analytics Engineering e Linhagem de Dados com Python, DBT, BigQuery e Looker Studio
-
 with
     dim_localidades as (
         select
@@ -9,7 +7,7 @@ with
             pais AS pais_localidade,
             cep AS cep_localidade
         from
-            {{ source('dsastaging', 'stg_localidades') }}
+            {{ source('source_raw', 'stg_localidades') }}
     )
 
 select * from dim_localidades

@@ -16,7 +16,7 @@ export DBT_PROJECT_DIR=$(pwd)/projects/study_bigquery
 study_bigquery:
   outputs:
     dev:
-      dataset: stagging
+      dataset: staging
       job_execution_timeout_seconds: 300
       job_retries: 1
       keyfile: /shared/credentials/study-bigquery.json
@@ -39,4 +39,7 @@ python src/load_data_bigquery.py
 ```
 dbt debug --profiles-dir=$DBT_PROFILE_DIR
 dbt run --profiles-dir=$DBT_PROFILE_DIR
+dbt docs generate --profiles-dir=$DBT_PROFILE_DIR
+dbt docs serve --profiles-dir=$DBT_PROFILE_DIR --host 0.0.0.0 --port 8080
+
 ```

@@ -1,9 +1,7 @@
-# Lab 9 - Analytics Engineering e Linhagem de Dados com Python, DBT, BigQuery e Looker Studio
-
 version: 2
 
 models:
-  - name: dsa_mart_vendas_por_cliente
+  - name: mart_vendas_por_cliente
     description: "Relatório que apresenta o total de produtos comprados e o valor total gasto por cada cliente."
     columns:
       - name: id_cliente
